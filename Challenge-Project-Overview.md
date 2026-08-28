@@ -31,7 +31,7 @@ geographic or systemic factors influencing transplant success.
 Your team will answer three linked questions:
 
 1. **Who is at risk?** Predict which waitlist candidates are most likely to die or
-   be removed from the list before receiving a transplant.
+   be removed as too sick before receiving a transplant.
 2. **How long will they wait?** Model time-to-transplant using survival analysis,
    accounting for candidates still waiting when the observation window ends.
 3. **Is the model fair, and can we explain it?** Audit performance across
@@ -52,11 +52,11 @@ fairness (subgroup performance within 0.05 AUC) and deliverable quality.
 Use these milestones to guide your work. Your team will create a **GitHub Projects
 board** to track tasks within each milestone.
 
-| Month      | Milestone          | Key Activities                                                  |
-|------------|--------------------|----------------------------------------------------------------|
-| **September**  | Data Understanding | Explore dataset, handle missing values, document findings       |
-| **October**    | Model Development  | Train baseline model, experiment with approaches, iterate      |
-| **November**   | Evaluation & Presentation | Finalize model, prepare presentation, document results        |
+| Month | Milestone | Key Activities |
+| -- | --- | --- |
+| **September** | Data Understanding | Explore dataset, handle missing values, document findings |
+| **October** | Model Development | Train baseline model, experiment with approaches, iterate |
+| **November** | Evaluation & Presentation | Finalize model, prepare presentation, document results |
 
 > **Note for the team:** Please create a GitHub Projects board in this repository
 > to break these milestones into weekly tasks. Go to the **Projects** tab →
@@ -70,76 +70,100 @@ dashboard & final presentation
 
 ## 📊 Dataset
 
-**Name and Source:** OPTN national transplant data (Organ Procurement and
-Transplantation Network, administered by UNOS under contract to HRSA)  
-**Format:** Structured and unstructured data (e.g., STAR files). Delivered as
-delimited text, SAS, or Stata.  
-**Size:** Multi-table dataset covering transplant recipients and waitlist
-candidates back to 10/1/1987 — thousands of records across hundreds of variables.
-Exact file size confirmed on delivery. Our working scope is the **kidney** tables
-only, which keeps this manageable on Google Colab.  
-**Location:** Access is by request, not direct download. See
-[`data/README.md`](data/README.md) for the full access process and current status.
+### Primary dataset: restricted OPTN kidney waitlist extract
+
+- **Name and source:** OPTN national transplant data (Organ Procurement and
+  Transplantation Network, administered by UNOS under contract to HRSA)
+- **File:** `data/restricted/kidney_waitlist_analytic.csv.gz`
+- **Format:** One compressed CSV containing structured,
+  candidate-listing-level records. It has no free-text fields.
+- **Current snapshot:** 494,862 rows and 38 columns (about 21.2 MB compressed).
+  Initial listing dates run from January 1, 2015 through June 30, 2026, with
+  follow-up recorded through July 3, 2026.
+- **Access:** Fellows have been sent an email containing the Google Drive link for
+  the restricted files. Download them to `data/restricted/`; this directory is
+  gitignored and its contents must not be committed. See
+  [`data/README.md`](data/README.md) for setup, schema, and handling guidance.
+
+### Fallback dataset: Brazilian kidney waitlist data
+
+If the restricted OPTN extract is temporarily unavailable, use
+`data/waitlist_kidney_brazil 2.csv` as the fallback. It contains 48,153 rows and
+53 columns covering 2000–2017 and must be read with a Windows-1252-compatible
+encoding such as `cp1252`. It is a separate population with a different schema
+and outcome coding, so do not combine it with the OPTN data without an explicit
+harmonization plan.
 
 ### Key Details
 
-- Publicly available OPTN national transplant data, including STAR files with
-  structured patient data (blood type, region, age, sex, race/ethnicity, medical
-  urgency scores) and unstructured free-text fields for cause of death narratives
-  and comorbidity notes.
-- **Access requires a signed Data Use Agreement.** The Challenge Advisor has
-  submitted the request and is handling the DUA. Students will not need to submit
-  their own request — but note that access terms are set by OPTN, and the advisor
-  will confirm the permitted handling arrangement before any data is shared with
-  the team.
-- **Working scope:** Kidney waitlist candidates and transplant recipients,
-  2010–present. We are deliberately not using all organs or the full 1987-forward
-  history — that scope would spend your whole term on preprocessing.
-- **Free-text fields** (cause of death narratives, comorbidity notes) are a
-  stretch component, not a core requirement. Get the structured model working
-  first.
+- The analytic extract includes demographics, blood type, cPRA, dialysis status,
+  BMI, functional status, diagnosis, OPTN region, listing center, transplant and
+  death dates, and wait-time fields.
+- The 38 columns comprise 33 source fields and five project-ready fields:
+  `outcome`, `event_adverse`, `event_transplant`, `censored`, and
+  `days_to_event`.
+- `event_adverse` marks death or removal as too sick. `event_transplant` marks the
+  `transplanted` outcome, while `censored` marks candidates who were still waiting
+  at the end of follow-up.
+- Work from the restricted OPTN extract by default. Use the Brazilian dataset
+  only when access to the primary data is blocked, and state clearly in every
+  analysis which dataset was used.
 
 ### Known Limitations and Preprocessing Needed
 
-- **Class imbalance.** Adverse waitlist outcomes are less common than transplants.
-  Lead your evaluation with PR-AUC and calibration (Brier score) rather than
+- **Class imbalance.** The adverse endpoint occurs in 69,743 records (14.1%). Lead
+  classification evaluation with PR-AUC and calibration (Brier score) rather than
   ROC-AUC alone — ROC-AUC can look deceptively good on imbalanced data.
-- **Censoring.** Many candidates are still waiting at the end of the observation
-  window. Treating "no transplant yet" as a negative label will bias your model.
-  This is what survival analysis exists to handle.
-- **Competing risks.** Transplant, death, and removal compete — a candidate who
-  dies can no longer be transplanted. A standard Cox model can bias wait-time
-  estimates; try a competing-risks formulation and compare.
+- **Censoring.** The extract marks 103,300 candidates (20.9%) as still waiting.
+  Treating "no transplant yet" as a negative label will bias the wait-time model.
+- **Competing outcomes.** Transplant, death, removal as too sick, administrative
+  removal, transplant elsewhere, and unknown outcomes need explicit treatment.
+  For each survival endpoint, document which outcomes count as the event,
+  censoring, or a competing event before fitting the model.
 - **Missingness.** Document missingness patterns before choosing an imputation
-  strategy, and record any rows you exclude.
-- **Distribution shift.** U.S. kidney allocation policy changed substantially in
-  2014 (KAS) and again in 2021 (Acuity Circles). A model trained across these
-  boundaries may not be stable. Consider encoding policy era and checking
-  performance over time — this is one of the more interesting findings available
-  in this dataset.
-- **Scale.** STAR files require software able to handle large record counts and
-  hundreds of variables. Excel will not open these. Use pandas.
+  strategy, and record any rows you exclude. In particular, cPRA fields contain
+  substantial missingness.
+- **Date validation.** Fifty-nine records currently have an end date before their
+  listing date and no `days_to_event`; validate or exclude them before time-to-event
+  modeling. Also decide whether zero-day events are analytically valid.
+- **Distribution shift.** The data begins after the 2014 Kidney Allocation System
+  change and spans later allocation-policy changes, including changes in 2021.
+  Encode meaningful policy eras and check performance over time.
+- **Scale.** The compressed CSV is manageable with pandas or another dataframe
+  library, including in Google Colab. Avoid editing the row-level file in a
+  spreadsheet application.
 - **Fairness and leakage.** Watch for the model simply re-learning historical
   allocation patterns rather than predicting clinical risk. That distinction is
-  the heart of the fairness component.
+  the heart of the fairness component. Identifier fields and fields created or
+  updated after the prediction point—including outcome labels and event dates—must
+  not be used as model features.
 
 ### Data Handling
 
-⚠️ **This is a public repository, and this dataset is governed by a Data Use
-Agreement.**
+⚠️ **This is a public repository, and the primary dataset is restricted.**
 
-- **Never commit raw row-level records to this repo.** The `data/` folder is
-  gitignored for record files.
+- **Never commit raw row-level records to this repo.** The `data/restricted/`
+  folder is gitignored.
 - Commit code, aggregate summaries, and figures only.
-- Do not redistribute the data outside the team.
+- Do not put the Google Drive link in this repository or redistribute the data
+  outside the team.
+- Follow all access and use terms included with the OPTN data delivery.
 - If you are unsure whether something is safe to commit, ask before you push.
 
 ### Data Dictionary and Documentation
 
-- OPTN STAR file data dictionary is provided by UNOS with the delivered files.
-- OPTN data documentation: https://optn.transplant.hrsa.gov/data/
-- Building your own expanded, project-specific data dictionary is the first
-  September deliverable.
+- The restricted delivery includes `column_manifest.csv`; however, its contents do
+  not fully match the current analytic CSV header. Review the discrepancy noted in
+  [`data/README.md`](data/README.md) when loading or validating the data.
+- Use the project [`Fellows' Data Dictionary`](data/data_dictionary.md) for all 38
+  fields, observed categorical codes, leakage guidance, and confidence levels.
+  The restricted delivery does not include a version-matched STAR dictionary, but
+  that is not a blocker for this project: the dictionary identifies which values
+  are official, project-verified, corroborated, or still unresolved. Fellows must
+  preserve raw codes rather than inventing finer labels for unresolved legacy
+  subcodes.
+- Official OPTN data information and request portal:
+  https://optn.transplant.hrsa.gov/data/
 
 ---
 
@@ -153,14 +177,22 @@ Agreement.**
 
 **Suggested Sequence:**
 
-1. **EDA and data dictionary** — profile every field: distributions, missingness,
-   outcome base rates. Produce a shared data dictionary the whole team works from.
-2. **Baseline classification** — start with logistic regression as an interpretable
-   baseline, then move to tree ensembles (Random Forest, XGBoost). Always report
-   the baseline; a complex model that barely beats logistic regression is itself a
+1. **EDA and data dictionary** — load the restricted OPTN file, validate dates and
+   derived labels, then profile every field: distributions, missingness, and
+   outcome base rates. If it is unavailable, load the Brazilian fallback with the
+   encoding and field mapping in `data/README.md`. Maintain the shared
+   [`Fellows' Data Dictionary`](data/DATA_DICTIONARY.md) as the extract and the
+   team's decisions evolve.
+2. **Baseline classification** — use `event_adverse` as the initial target. Start
+   with logistic regression as an interpretable baseline, then move to tree
+   ensembles (Random Forest, XGBoost). For the Brazilian fallback, first create the
+   comparable adverse target described in `data/README.md`. Always report the
+   baseline; a complex model that barely beats logistic regression is itself a
    finding worth stating.
-3. **Survival modeling** — Cox proportional hazards for time-to-transplant,
-   evaluated with C-index. Then compare against a competing-risks model.
+3. **Survival modeling** — use `days_to_event` only after defining the endpoint and
+   treatment of every outcome. Start with Cox proportional hazards, evaluated with
+   C-index, then compare against a competing-risks model. With the fallback, use
+   `time` as the duration and its `event` codes as documented in `data/README.md`.
 4. **Calibration and thresholds** — Brier score, calibration curves, decile lift.
    Choose an operating point tied to a stated use case, and justify it.
 5. **Explainability** — SHAP global and local explanations. Then the harder part:
@@ -256,16 +288,12 @@ number.
 ## 🚀 Getting Started
 
 1. **Review this overview document** and note any questions for our first meeting
-2. **Begin reviewing the dataset** using the link above — start with
-   `data/README.md` for current access status
+2. **Begin reviewing the dataset** using the Google Drive link in the email sent to
+   fellows — start with [`data/README.md`](data/README.md) for download, setup, and
+   validation notes
 3. **Read the GitHub Projects documentation**
    [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 4. **Set up your environment** — a Colab notebook with `pandas`, `scikit-learn`,
    `lifelines`, and `shap` is enough to start
 
 I'm excited to work with you!
-
----
-
-
----
