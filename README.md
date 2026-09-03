@@ -2,14 +2,14 @@
 
 ### 👥 **Team Members**
 
-| Name                | GitHub Handle  | Contribution                                                             |
-|---------------------|----------------|--------------------------------------------------------------------------|
-| Naya Singhania      | @nayasinghania |                                                                          |
-| Abdullah Ismail     |                |                                                                          |
-| Afra Ibnat          |                |                                                                          |
-| Catherine Markowska |                |                                                                          |
-| James Diega         |                |                                                                          |
-| Jocelyn Lew         |                |                                                                          |
+| Name                | GitHub Handle                                      | Contribution                                                             |
+|---------------------|----------------------------------------------------|--------------------------------------------------------------------------|
+| Naya Singhania      | [@nayasinghania](https://github.com/nayasinghania) |                                                                          |
+| Abdullah Ismail     |                                                    |                                                                          |
+| Afra Ibnat          |                                                    |                                                                          |
+| Catherine Markowska |                                                    |                                                                          |
+| James Diega         |                                                    |                                                                          |
+| Jocelyn Lew         |                                                    |                                                                          |
 
 ---
 
