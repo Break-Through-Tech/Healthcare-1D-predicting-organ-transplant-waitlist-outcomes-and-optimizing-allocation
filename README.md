@@ -10,6 +10,7 @@
 | Catherine Markowska |                                                    |                                                                          |
 | James Diega         |                                                    |                                                                          |
 | Jocelyn Lew         |                                                    |                                                                          |
+| Tracy Chen          |                                                    |                                                                          |
 
 ---
 
