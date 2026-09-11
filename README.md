@@ -6,7 +6,7 @@
 |---------------------|----------------------------------------------------|--------------------------------------------------------------------------|
 | Naya Singhania      | [@nayasinghania](https://github.com/nayasinghania) |                                                                          |
 | Abdullah Ismail     |                                                    |                                                                          |
-| Afra Ibnat          |                                                    |                                                                          |
+| Afra Ibnat          | [@afraibnat](https://github.com/afraibnat)         |                                                                          |
 | Catherine Markowska |                                                    |                                                                          |
 | James Diega         |                                                    |                                                                          |
 | Jocelyn Lew         |                                                    |                                                                          |
