@@ -8,7 +8,7 @@
 | Abdullah Ismail     | [@25abdullah](https://github.com/25abdullah)                                                   |                                                                          |
 | Afra Ibnat          | [@afraibnat](https://github.com/afraibnat)         |                                                                          |
 | Catherine Markowska |  [@CatherineMarkowska](https://github.com/CatherineMarkowska) 
-| James Diega         |                                                    |                                                                          |
+| James Diega         | [@jdiega13](https://github.com/jdiega13)           |                                                                          |
 | Jocelyn Lew         | [@JocelynLew](https://github.com/JocelynLew)       |                                                                          |
 | Tracy Chen          |                                                    |                                                                          |
 
