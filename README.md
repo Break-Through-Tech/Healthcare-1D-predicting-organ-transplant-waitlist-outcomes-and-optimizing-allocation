@@ -5,7 +5,7 @@
 | Name                | GitHub Handle                                      | Contribution                                                             |
 |---------------------|----------------------------------------------------|--------------------------------------------------------------------------|
 | Naya Singhania      | [@nayasinghania](https://github.com/nayasinghania) |                                                                          |
-| Abdullah Ismail     |                                                    |                                                                          |
+| Abdullah Ismail     | [@25abdullah](https://github.com/25abdullah)                                                   |                                                                          |
 | Afra Ibnat          | [@afraibnat](https://github.com/afraibnat)         |                                                                          |
 | Catherine Markowska |                                                    |                                                                          |
 | James Diega         |                                                    |                                                                          |
