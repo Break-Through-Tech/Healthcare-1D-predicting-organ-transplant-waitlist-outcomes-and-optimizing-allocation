@@ -9,7 +9,7 @@
 | Afra Ibnat          | [@afraibnat](https://github.com/afraibnat)         |                                                                          |
 | Catherine Markowska |                                                    |                                                                          |
 | James Diega         |                                                    |                                                                          |
-| Jocelyn Lew         |                                                    |                                                                          |
+| Jocelyn Lew         | [@JocelynLew](https://github.com/JocelynLew)       |                                                                          |
 | Tracy Chen          |                                                    |                                                                          |
 
 ---
