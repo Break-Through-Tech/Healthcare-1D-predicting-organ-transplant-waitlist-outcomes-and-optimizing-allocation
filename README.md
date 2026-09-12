@@ -7,7 +7,7 @@
 | Naya Singhania      | [@nayasinghania](https://github.com/nayasinghania) |                                                                          |
 | Abdullah Ismail     | [@25abdullah](https://github.com/25abdullah)                                                   |                                                                          |
 | Afra Ibnat          | [@afraibnat](https://github.com/afraibnat)         |                                                                          |
-| Catherine Markowska |                                                    |                                                                          |
+| Catherine Markowska |  [@CatherineMarkowska](https://github.com/CatherineMarkowska) 
 | James Diega         |                                                    |                                                                          |
 | Jocelyn Lew         | [@JocelynLew](https://github.com/JocelynLew)       |                                                                          |
 | Tracy Chen          |                                                    |                                                                          |
