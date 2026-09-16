@@ -17,8 +17,6 @@
 
 ## 🎯 **Project Highlights**
 
-**Example:**
-
 - Developed a machine learning model using `[model type/technique]` to address `[challenge project task]`.
 - Achieved `[key metric or result]`, demonstrating `[value or impact]` for `[host company]`.
 - Generated actionable insights to inform business decisions at `[host company or stakeholders]`.
@@ -36,57 +34,42 @@
 
 ## 🏗️ **Project Overview**
 
-**Describe:**
+The company providing this challenge is MediMate foundation, a California 501(c)(3) nonprofit focused on improving healthcare outcomes through advanced analytics and predictive modeling. The challenge they have given us involves working on kidney transplant datasets to create models that can aid in effectively distributing available donated organs. 
 
-- How this project is connected to the Break Through Tech AI Program
-- Your AI Studio host company and the project objective and scope
-- The real-world significance of the problem and the potential impact of your work
+This could be significant to the real world, as it would ensure that kidneys are matched to those who need and would benefit from it most. A doctor's expertise along with data-backed predictive modeling could create a better process for kidney donation recipients. 
+
+Not only does this project have real-world potential, but it will give us the hard and soft skills needed to succeed in future ML jobs. This challenge project involves the entire pipeline from EDA to deployment and is built by a team much like what would be encountered in a real job.
 
 ---
 
 ## 📊 **Data Exploration**
 
-**You might consider describing the following (as applicable):**
-
 * The dataset(s) used: origin, format, size, type of data
 * Data exploration and preprocessing approaches
 * Insights from your Exploratory Data Analysis (EDA)
 * Challenges and assumptions when working with the dataset(s)
-
-**Potential visualizations to include:**
-
 * Plots, charts, heatmaps, feature visualizations, sample dataset images
 
 ---
 
 ## 🧠 **Model Development**
 
-**You might consider describing the following (as applicable):**
-
 * Model(s) used (e.g., CNN with transfer learning, regression models)
 * Feature selection and Hyperparameter tuning strategies
 * Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
-
 
 ---
 
 ## 📈 **Results & Key Findings**
 
-**You might consider describing the following (as applicable):**
-
 * Performance metrics (e.g., Accuracy, F1 score, RMSE)
 * How your model performed
 * Insights from evaluating model fairness
-
-**Potential visualizations to include:**
-
-* Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
+* Visualizations: Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
 
 ---
 
 ## 🚀 **Next Steps**
-
-**You might consider addressing the following (as applicable):**
 
 * What are some of the limitations of your model?
 * What would you do differently with more time/resources?
