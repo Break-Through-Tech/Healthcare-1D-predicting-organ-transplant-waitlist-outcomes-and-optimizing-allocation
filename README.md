@@ -2,16 +2,16 @@
 
 ### 👥 **Team Members**
 
-| Name                | GitHub Handle                                                      | Contribution                                                             |
-|---------------------|--------------------------------------------------------------------|--------------------------------------------------------------------------|
-| Naya Singhania      | [@nayasinghania](https://github.com/nayasinghania)                 |                                                                          |
-| Abdullah Ismail     | [@25abdullah](https://github.com/25abdullah)                       |                                                                          |
-| Afra Ibnat          | [@afraibnat](https://github.com/afraibnat)                         |                                                                          |
-| Catherine Markowska | [@CatherineMarkowska](https://github.com/CatherineMarkowska)       |                                                                          | 
-| James Diega         | [@jdiega13](https://github.com/jdiega13)                           |                                                                          |
-| Jocelyn Lew         | [@JocelynLew](https://github.com/JocelynLew)                       |                                                                          |
-| Tracy Chen          | [@TracyZexiChen](https://github.com/TracyZexiChen)                 |                                                                          |
-| Maria Gonzalez      | [@mariafernandagonzalez](https://github.com/mariafernandagonzalez) |                                                                          |
+| Name                | GitHub Handle                                                      | Contribution |
+|---------------------|--------------------------------------------------------------------|--------------|
+| Naya Singhania      | [@nayasinghania](https://github.com/nayasinghania)                 |              |
+| Abdullah Ismail     | [@25abdullah](https://github.com/25abdullah)                       |              |
+| Afra Ibnat          | [@afraibnat](https://github.com/afraibnat)                         |              |
+| Catherine Markowska | [@CatherineMarkowska](https://github.com/CatherineMarkowska)       |              | 
+| James Diega         | [@jdiega13](https://github.com/jdiega13)                           |              |
+| Jocelyn Lew         | [@JocelynLew](https://github.com/JocelynLew)                       |              |
+| Tracy Chen          | [@TracyZexiChen](https://github.com/TracyZexiChen)                 |              |
+| Maria Gonzalez      | [@mariafernandagonzalez](https://github.com/mariafernandagonzalez) |              |
 
 ---
 
@@ -28,13 +28,8 @@
 
 ## 👩🏽‍💻 **Setup and Installation**
 
-**Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
-
-* How to clone the repository
-* How to install dependencies
-* How to set up the environment
-* How to access the dataset(s)
-* How to run the notebook or scripts
+1. `git clone https://github.com/Break-Through-Tech/Healthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation.git`
+2. `pip install -r requirements.txt`
 
 ---
 
