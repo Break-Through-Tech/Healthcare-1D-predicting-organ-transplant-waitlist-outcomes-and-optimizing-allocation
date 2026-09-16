@@ -30,6 +30,7 @@
 
 1. `git clone https://github.com/Break-Through-Tech/Healthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation.git`
 2. `pip install -r requirements.txt`
+3. Run `jupyter lab` in the project root, and a window will pop up in your browser to run the notebooks
 
 ---
 
