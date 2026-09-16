@@ -2,22 +2,20 @@
 
 ### 👥 **Team Members**
 
-| Name                | GitHub Handle                                                      | Contribution                                                             |
-|---------------------|--------------------------------------------------------------------|--------------------------------------------------------------------------|
-| Naya Singhania      | [@nayasinghania](https://github.com/nayasinghania)                 |                                                                          |
-| Abdullah Ismail     | [@25abdullah](https://github.com/25abdullah)                       |                                                                          |
-| Afra Ibnat          | [@afraibnat](https://github.com/afraibnat)                         |                                                                          |
-| Catherine Markowska | [@CatherineMarkowska](https://github.com/CatherineMarkowska)       |                                                                          | 
-| James Diega         | [@jdiega13](https://github.com/jdiega13)                           |                                                                          |
-| Jocelyn Lew         | [@JocelynLew](https://github.com/JocelynLew)                       |                                                                          |
-| Tracy Chen          | [@TracyZexiChen](https://github.com/TracyZexiChen)                 |                                                                          |
-| Maria Gonzalez      | [@mariafernandagonzalez](https://github.com/mariafernandagonzalez) |                                                                          |
+| Name                | GitHub Handle                                                      | Contribution |
+|---------------------|--------------------------------------------------------------------|--------------|
+| Naya Singhania      | [@nayasinghania](https://github.com/nayasinghania)                 |              |
+| Abdullah Ismail     | [@25abdullah](https://github.com/25abdullah)                       |              |
+| Afra Ibnat          | [@afraibnat](https://github.com/afraibnat)                         |              |
+| Catherine Markowska | [@CatherineMarkowska](https://github.com/CatherineMarkowska)       |              | 
+| James Diega         | [@jdiega13](https://github.com/jdiega13)                           |              |
+| Jocelyn Lew         | [@JocelynLew](https://github.com/JocelynLew)                       |              |
+| Tracy Chen          | [@TracyZexiChen](https://github.com/TracyZexiChen)                 |              |
+| Maria Gonzalez      | [@mariafernandagonzalez](https://github.com/mariafernandagonzalez) |              |
 
 ---
 
 ## 🎯 **Project Highlights**
-
-**Example:**
 
 - Developed a machine learning model using `[model type/technique]` to address `[challenge project task]`.
 - Achieved `[key metric or result]`, demonstrating `[value or impact]` for `[host company]`.
@@ -28,69 +26,50 @@
 
 ## 👩🏽‍💻 **Setup and Installation**
 
-**Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
-
-* How to clone the repository
-* How to install dependencies
-* How to set up the environment
-* How to access the dataset(s)
-* How to run the notebook or scripts
+1. `git clone https://github.com/Break-Through-Tech/Healthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation.git`
+2. `pip install -r requirements.txt`
+3. Run `jupyter lab` in the project root, and a window will pop up in your browser where you can run the notebooks
 
 ---
 
 ## 🏗️ **Project Overview**
 
-**Describe:**
+The company providing this challenge is MediMate foundation, a California 501(c)(3) nonprofit focused on improving healthcare outcomes through advanced analytics and predictive modeling. The challenge they have given us involves working on kidney transplant datasets to create models that can aid in effectively distributing available donated organs. 
 
-- How this project is connected to the Break Through Tech AI Program
-- Your AI Studio host company and the project objective and scope
-- The real-world significance of the problem and the potential impact of your work
+This could be significant to the real world, as it would ensure that kidneys are matched to those who need and would benefit from it most. A doctor's expertise along with data-backed predictive modeling could create a better process for kidney donation recipients. 
+
+Not only does this project have real-world potential, but it will give us the hard and soft skills needed to succeed in future ML jobs. This challenge project involves the entire pipeline from EDA to deployment and is built by a team much like what would be encountered in a real job.
 
 ---
 
 ## 📊 **Data Exploration**
 
-**You might consider describing the following (as applicable):**
-
 * The dataset(s) used: origin, format, size, type of data
 * Data exploration and preprocessing approaches
 * Insights from your Exploratory Data Analysis (EDA)
 * Challenges and assumptions when working with the dataset(s)
-
-**Potential visualizations to include:**
-
 * Plots, charts, heatmaps, feature visualizations, sample dataset images
 
 ---
 
 ## 🧠 **Model Development**
 
-**You might consider describing the following (as applicable):**
-
 * Model(s) used (e.g., CNN with transfer learning, regression models)
 * Feature selection and Hyperparameter tuning strategies
 * Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
-
 
 ---
 
 ## 📈 **Results & Key Findings**
 
-**You might consider describing the following (as applicable):**
-
 * Performance metrics (e.g., Accuracy, F1 score, RMSE)
 * How your model performed
 * Insights from evaluating model fairness
-
-**Potential visualizations to include:**
-
-* Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
+* Visualizations: Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
 
 ---
 
 ## 🚀 **Next Steps**
-
-**You might consider addressing the following (as applicable):**
 
 * What are some of the limitations of your model?
 * What would you do differently with more time/resources?
@@ -102,17 +81,16 @@
 
 Specify how your project can be used by others. Choose an appropriate license and link it here (e.g., MIT, Apache 2.0). Make sure your Challenge Advisor approves of the selected license type. 
 
-**Example:**
-This project is licensed under the MIT License.
+This project is licensed under the [name of license] License.
 
 ---
 
-## 📄 **References** (Optional but encouraged)
+## 📄 **References**
 
-Cite relevant papers, articles, or resources that supported your project.
+- https://github.com/baheldeepti/Kideny_Allocation_OPTN/blob/main/analysis/PAPER.md
 
 ---
 
-## 🙏 **Acknowledgements** (Optional but encouraged)
+## 🙏 **Acknowledgements**
 
 Thank your Challenge Advisor, host company representatives, TA, and others who supported your project.
