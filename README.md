@@ -30,7 +30,7 @@
 
 1. `git clone https://github.com/Break-Through-Tech/Healthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation.git`
 2. `pip install -r requirements.txt`
-3. Run `jupyter lab` in the project root, and a window will pop up in your browser to run the notebooks
+3. Run `jupyter lab` in the project root, and a window will pop up in your browser where you can run the notebooks
 
 ---
 
@@ -98,17 +98,16 @@
 
 Specify how your project can be used by others. Choose an appropriate license and link it here (e.g., MIT, Apache 2.0). Make sure your Challenge Advisor approves of the selected license type. 
 
-**Example:**
-This project is licensed under the MIT License.
+This project is licensed under the [name of license] License.
 
 ---
 
-## 📄 **References** (Optional but encouraged)
+## 📄 **References**
 
-Cite relevant papers, articles, or resources that supported your project.
+- https://github.com/baheldeepti/Kideny_Allocation_OPTN/blob/main/analysis/PAPER.md
 
 ---
 
-## 🙏 **Acknowledgements** (Optional but encouraged)
+## 🙏 **Acknowledgements**
 
 Thank your Challenge Advisor, host company representatives, TA, and others who supported your project.
