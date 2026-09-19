@@ -4,14 +4,10 @@
 
 | Name                | GitHub Handle                                                      | Contribution |
 |---------------------|--------------------------------------------------------------------|--------------|
-| Naya Singhania      | [@nayasinghania](https://github.com/nayasinghania)                 |              |
 | Abdullah Ismail     | [@25abdullah](https://github.com/25abdullah)                       |              |
 | Afra Ibnat          | [@afraibnat](https://github.com/afraibnat)                         |              |
 | Catherine Markowska | [@CatherineMarkowska](https://github.com/CatherineMarkowska)       |              | 
 | James Diega         | [@jdiega13](https://github.com/jdiega13)                           |              |
-| Jocelyn Lew         | [@JocelynLew](https://github.com/JocelynLew)                       |              |
-| Tracy Chen          | [@TracyZexiChen](https://github.com/TracyZexiChen)                 |              |
-| Maria Gonzalez      | [@mariafernandagonzalez](https://github.com/mariafernandagonzalez) |              |
 
 ---
 
