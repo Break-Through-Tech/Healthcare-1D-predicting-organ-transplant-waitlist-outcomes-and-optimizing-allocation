@@ -3,3 +3,7 @@ notebooks/*restricted*
 notebooks/.ipynb_checkpoints/
 
 .venv/
+
+.ipynb_checkpoints/
+
+data/processed/
