@@ -3,3 +3,5 @@ notebooks/*restricted*
 notebooks/.ipynb_checkpoints/
 
 .venv/
+data/processed/cleaned_waitlist.csv
+data/processed/task3_encoded_scaled.csv
