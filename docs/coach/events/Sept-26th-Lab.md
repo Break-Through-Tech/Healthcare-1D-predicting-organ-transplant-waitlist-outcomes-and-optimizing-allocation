@@ -1,7 +1,7 @@
 <!-- Publication Status: published -->
 <!-- Managed copy from btt-coach-content/docs/coach/. Edit the canonical source, not this file. -->
 <!-- Fall AI Studio Section: E -->
-# Sept 26nd Lab Session
+# Sept 26th Lab Session
 
 This session is geared towards meeting with your Mentor and project work time. This is an active session where you are expected to be **on camera** and **participating**.
 
@@ -53,7 +53,7 @@ Do not dismiss yourself from the meeting after meeting with your mentor. Break b
 
 ## Going Forward
 
-Wonderful job peeps! The first CA lab done and here is what is next:
+Wonderful job peeps! The first mentor lab done and here is what is next:
 
 - Next meeting is **Saturday, Oct 3rd, 12 to 3pm ET**.
     - Every team member is expected to put in 1 to 3 hours of work outside these workshop Saturday time slots.
