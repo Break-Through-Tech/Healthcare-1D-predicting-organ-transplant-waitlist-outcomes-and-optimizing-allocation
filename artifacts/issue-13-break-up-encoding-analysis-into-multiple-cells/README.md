@@ -1,6 +1,6 @@
 # Issue #13: Break up the encoding analysis into multiple cells
 
-This is a detailed completion report for [Issue 13](https://github.com/Break-Through-Tech/Healthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation/issues/13). Break up the single-cell encoding analysis into multiple documented cells.
+This is a detailed completion report for [Issue 13](https://github.com/Break-Through-Tech/Healthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation/issues/13). **Break up the single-cell encoding analysis into multiple documented cells.** The evidence is tied to source commit `8529c8eb307b94ef95efadf8d5ddb269cb1430a4` and includes Git history for independently checking that relationship.
 
 ## Outcome
 The encoding analysis no longer runs as one large cell. All encoding and scaling work now lives in a single sectioned notebook, `encoding-scaling-cells.ipynb`, where each step runs in its own cell. The team can inspect the result of each stage and easily refer back to it as needed.
