@@ -1,6 +1,6 @@
 **Issue #1: Explore data statistics and shape**
 ---
-This is a detailed completion report for [Issue 1](https://github.com/orgs/Break-Through-Tech/projects/200/views/1?pane=issue&itemId=246011493&issue=Break-Through-Tech%7CHealthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation%7C1). **Explore the dataset's statistics and shape.**
+This is a detailed completion report for [Issue 1](https://github.com/orgs/Break-Through-Tech/projects/200/views/1?pane=issue&itemId=246011493&issue=Break-Through-Tech%7CHealthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation%7C1). **Explore the dataset's statistics and shape.** The evidence is tied in source commit `b2b4973dcecf8acf5829cc09daa20f3b226e7e6b` and includes Git history for independently checking that relationship.
 
 **Outcome**
 ---
