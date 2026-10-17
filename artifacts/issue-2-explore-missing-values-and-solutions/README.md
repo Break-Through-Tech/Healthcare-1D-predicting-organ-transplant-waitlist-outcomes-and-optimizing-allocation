@@ -1,6 +1,6 @@
 **Issue #2: Explore missing values and solutions**
 ---
-This is a detailed completion report for [Issue 2](https://github.com/orgs/Break-Through-Tech/projects/200/views/1?pane=issue&itemId=246011664&issue=Break-Through-Tech%7CHealthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation%7C2). 
+This is a detailed completion report for [Issue 2](https://github.com/orgs/Break-Through-Tech/projects/200/views/1?pane=issue&itemId=246011664&issue=Break-Through-Tech%7CHealthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation%7C2). **Explore the columns with missing values and devise a solution.** The evidence is tied to source commit `b2b4973dcecf8acf5829cc09daa20f3b226e7e6b` and includes Git history for independently checking that relationship.
 
 **Outcome**
 ---
@@ -31,5 +31,5 @@ Every column carrying missing values now has a documented handling strategy, cho
 ---
 | Area | Exact file snapshot | Why is it included |
 | --- | --- | --- |
-| Cleaning notebook | [outliers.ipynb](<keep your existing link>) | Date parsing, transplant flag and wait-time target, null handling, imputation, outlier handling, and dialysis date derivation |
+| Cleaning notebook | [outliers.ipynb](b2b4973dcecf8acf5829cc09daa20f3b226e7e6b) | Date parsing, transplant flag and wait-time target, null handling, imputation, outlier handling, and dialysis date derivation |
 | Cleaned data | `data/processed/cleaned_waitlist.csv` | Output of the notebook, used for modeling |
