@@ -1,6 +1,6 @@
 **Issue #3: Encode and normalize data**
 ---
-This is a detailed completion report for [Issue 3](https://github.com/orgs/Break-Through-Tech/projects/200/views/1?pane=issue&itemId=246012223&issue=Break-Through-Tech%7CHealthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation%7C3).
+This is a detailed completion report for [Issue 3](https://github.com/orgs/Break-Through-Tech/projects/200/views/1?pane=issue&itemId=246012223&issue=Break-Through-Tech%7CHealthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation%7C3). **Encode the categorical features and normalize numerical features by scaling.** The evidence is tied to source commit eca5d5ad14e516b98c55cf2022c3785734542ff1 and includes Git history for independently checking that relationship.
 
 **Outcome**
 ---
