@@ -15,4 +15,4 @@ INIT_CPRA, INIT_AGE, and BMI_TCR. However, as they were tested, INIT_CPRA was a 
 ## Files Delivered
 | Area | Exact file snapshot | Why is it included |
 |---|---|---|
-| Outliers | outliers.ipynb | Cutting away outliers |
+| Outliers | [outliers.ipynb](https://github.com/Break-Through-Tech/Healthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation/blob/main/notebooks/outliers.ipynb) | Cutting away outliers |
