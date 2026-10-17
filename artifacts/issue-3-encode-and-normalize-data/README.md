@@ -10,3 +10,6 @@ This is a detailed completion report for [Issue 3](https://github.com/orgs/Break
 
 **Files Delivered**
 ---
+| Area | Exact file snapshot | Why is it included |
+| --- | --- | --- |
+| Encoding and scaling notebook | [encoding-scaling-cells.ipynb(https://github.com/Break-Through-Tech/Healthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation/blob/main/notebooks/encoding-scaling-cells.ipynb) | Code for encoding and scaling |
