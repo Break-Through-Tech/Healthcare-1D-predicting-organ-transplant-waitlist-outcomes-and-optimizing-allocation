@@ -17,4 +17,4 @@ The encoding analysis no longer runs as one large cell. All encoding and scaling
 ## Files Delivered
 | Area | Exact file snapshot | Why is it included |
 |---|---|---|
-| Encoding and scaling notebook | encoding-scaling-cells.ipynb | Decoding, feature engineering, encoding, scaling, and verification split into documented cells |
+| Encoding and scaling notebook | [encoding-scaling-cells.ipynb](https://github.com/Break-Through-Tech/Healthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation/blob/main/notebooks/encoding-scaling-cells.ipynb) | Decoding, feature engineering, encoding, scaling, and verification split into documented cells |
