@@ -24,4 +24,5 @@ The cleaned waitlist data is now a fully numeric, model-ready matrix at `data/pr
 ---
 | Area | Exact file snapshot | Why is it included |
 | --- | --- | --- |
-| Encoding and scaling notebook | [encoding-scaling-cells.ipynb](https://github.com/Break-Through-Tech/Healthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation/blob/main/notebooks/encoding-scaling-cells.ipynb) | Code for encoding and scaling |
+| Encoding and scaling notebook | [encoding-scaling-cells.ipynb](https://github.com/Break-Through-Tech/Healthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation/blob/main/notebooks/encoding-scaling-cells.ipynb) | Decoding, feature engineering, encoding, scaling, and verification split into documented cells |
+| Encoded and scaled data | `data/processed/task3_encoded_scaled.csv | Output of the notebook, used for modeling
