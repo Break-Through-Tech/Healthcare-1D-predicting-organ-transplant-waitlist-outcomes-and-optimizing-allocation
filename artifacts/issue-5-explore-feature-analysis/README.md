@@ -9,7 +9,9 @@ The data was examined and it was found that columns were either numeric (int or 
 **Work Completed**
 ---
 Integer and float columns include: `BMI_TCR`, `INIT_CPRA`, `IAG_KI`, `FUNC_STAT_TCR`, and `A2A2B_ELIGIBILITY` 
+
 String columns include: `MULTIORG`
+
 Some of these integer and float columns include missing values that will be handled.
 
 A correlation matrix was plotted to display each features' correlation with the possible target label `event_adverse`
