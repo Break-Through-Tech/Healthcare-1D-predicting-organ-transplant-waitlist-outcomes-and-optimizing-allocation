@@ -8,7 +8,9 @@ This is a detailed completion report for [Issue 4](https://github.com/Break-Thro
 **Work Completed**
 ---
 `LISTED_POST_2021`: Flag marking whether a patient was listed on or after March 15, 2021. This is the date where major kidney allocation policy took effect and can show a shift in outcomes.
+
 `AGE_DIALYSIS_INTERACTION`: Multiplying age by years on dialysis. It separates patients that are older and have been on dialysis for a longer time.
+
 `DIALYSIS_DURATION_LOG`: Log-transform to compress right-skew in DIALYSIS_DURATION. This is a feature made to test out in modeling to scale values proportionally.
 
 **Files Delivered**
