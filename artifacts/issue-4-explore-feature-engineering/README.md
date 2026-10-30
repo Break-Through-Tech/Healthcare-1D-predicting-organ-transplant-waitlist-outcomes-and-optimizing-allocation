@@ -7,7 +7,7 @@ This is a detailed completion report for [Issue 4](https://github.com/Break-Thro
 
 **Work Completed**
 ---
-`LISTED_POST_2021`: Flag marking whether a patient was listed on or after March 15, 2021. This is the date where major kidney allocation policy took effect and can show a shift in outcomes.
+`POLICY_ERA`: Categorical feature based on listing date relative to the March 2021 kidney allocation policy change. The notebook has a cell separating listing dates prior to March 3rd, then between 2015-2021, and then after 2021. This can be helpful for comparing features to this feature and observe outcomes.
 
 `AGE_DIALYSIS_INTERACTION`: Multiplying age by years on dialysis. It separates patients that are older and have been on dialysis for a longer time.
 
