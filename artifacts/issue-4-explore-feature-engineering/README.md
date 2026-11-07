@@ -1,6 +1,6 @@
 **Issue #4: Explore Feature Engineering**
 ---
-This is a detailed completion report for [Issue 4](https://github.com/Break-Through-Tech/Healthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation/issues/4). **Observe what features relate to our 2 different labels (waitlist outcome vs waitlist duration) and then choose the best features for each label.** The evidence is tied to source commit `8529c8eb307b94ef95efadf8d5ddb269cb1430a4` and includes Git history for independently checking that relationship.
+This is a detailed completion report for [Issue 4](https://github.com/Break-Through-Tech/Healthcare-1D-predicting-organ-transplant-waitlist-outcomes-and-optimizing-allocation/issues/4). **Observe what features relate to our possible label features and then choose the best features for each label.** The evidence is tied to source commit `8529c8eb307b94ef95efadf8d5ddb269cb1430a4` and includes Git history for independently checking that relationship.
 
 **Outcome**
 ---
