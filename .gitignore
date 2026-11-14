@@ -6,3 +6,4 @@ notebooks/.ipynb_checkpoints/
 data/processed/cleaned_waitlist.csv
 data/processed/task3_encoded_scaled.csv
 .ipynb_checkpoints/
+data/processed/
